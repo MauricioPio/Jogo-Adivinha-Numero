@@ -35,9 +35,10 @@ function conferirPalpite() {
         baixoOuAlto.textContent = 'Seu palpite está muito alto!';
       }
     }
-  
+
     contagemPalpites++;
     campoPalpite.value = '';
     campoPalpite.focus();
   }
   
+  envioPalpite.addEventListener('click', conferirPalpite);

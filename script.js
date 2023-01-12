@@ -23,7 +23,7 @@ function conferirPalpite() {
     baixoOuAlto.textContent = '';
     configFimDeJogo();
   } else if (contagemPalpites === 10) {
-    ultimoResultado.textContent = '!!!FIM DE JOGO!!!';
+    ultimoResultado.textContent = '!!!FIM DE JOGO!!! O número era: ' + numeroAleatorio;
     baixoOuAlto.textContent = '';
     configFimDeJogo();
   } else {
@@ -67,6 +67,7 @@ function reiniciarJogo() {
   campoPalpite.value = '';
   campoPalpite.focus();
 
+  palpites.textContent = '';  
   ultimoResultado.textContent = '';
   
 

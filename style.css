@@ -7,11 +7,32 @@ body {
     max-width: 800px;
     min-width: 480px;
     margin: 0 auto;
+    background: rgb(0, 0, 0) url('imagens/tela-home.jpeg')no-repeat
+}
+
+h1 {
+    font-family: oswald;
+    color: #0046A4;
+}
+
+.container {
+    background-color: hsla(0, 1%, 62%, 0.356);
+    border-radius: 20px;
+    text-align: center;
+    width: 1000px;
+    height: 500px;
+    margin-top: 70px;
+    padding: 20px;
 }
 
 .form input[type="number"] {
+    border-radius: 10px;
+    height: 42px;
     width: 200px;
+
 }
+
+
 
 .lastResult {
     color: white;

@@ -1,17 +1,30 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Roboto+Mono&display=swap');
+
+
+
+
 html {
-    font-family: sans-serif;
+    font-family: 'Roboto Mono', monospace;
 }
 
 body {
-    width: 50%;
-    max-width: 800px;
-    min-width: 480px;
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    min-width: 480px; 
     margin: 0 auto;
     background: rgb(0, 0, 0) url('imagens/tela-home.jpeg')no-repeat
 }
 
 h1 {
-    font-family: oswald;
+    font-family: 'Oswald', sans-serif;
+    font-size: 60px;
+    color: #0046A4;
+    margin: 16px;
+}
+
+p {
     color: #0046A4;
 }
 
@@ -22,23 +35,72 @@ h1 {
     width: 1000px;
     height: 500px;
     margin-top: 70px;
-    padding: 20px;
+    padding: 0px 20px;
 }
 
 .form input[type="number"] {
+    -moz-appearance: textfield;
+    border: initial;
     border-radius: 10px;
     height: 42px;
     width: 200px;
-
 }
 
-
+label[for="guessField"]{
+    color: #0046A4;
+}
 
 .lastResult {
     color: white;
     padding: 3px;
 }
 
-.palpites {
-    background-color: aqua;
+.resultParas {
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.ultimoResultado_active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    color: #ffffff;
+    font-size: 24px;
+    height: 42px;
+    width: 530px;
+}
+
+.palpites_active {
+    color: #0046A4;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    height: 42px;
+    width: 520px;
+    padding-left: 10px;
+}
+
+.envioPalpite {
+    color: #ffffff;
+    border: initial;
+    height: 42px;
+    border-radius: 10px;
+    background-color: #17B9E1;
+    padding: 0px 15px 0px 15px;
+}
+
+.envioPalpite:hover{
+    cursor: pointer;
+}
+
+.botao_reinicio{ 
+    color: #ffffff;
+    border: initial;
+    height: 42px;
+    border-radius: 10px;
+    background-color: #17B9E1;
+    padding: 0px 15px 0px 15px;
 }

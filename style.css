@@ -1,8 +1,4 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Roboto+Mono&display=swap');
-
-
-
 
 html {
     font-family: 'Roboto Mono', monospace;
@@ -12,7 +8,7 @@ body {
     display: flex;
     justify-content: center;
     max-width: 1200px;
-    min-width: 480px; 
+    min-width: 480px;
     margin: 0 auto;
     background: rgb(0, 0, 0) url('imagens/tela-home.jpeg')no-repeat
 }
@@ -46,7 +42,7 @@ p {
     width: 200px;
 }
 
-label[for="guessField"]{
+label[for="guessField"] {
     color: #0046A4;
 }
 
@@ -92,11 +88,11 @@ label[for="guessField"]{
     padding: 0px 15px 0px 15px;
 }
 
-.envioPalpite:hover{
+.envioPalpite:hover {
     cursor: pointer;
 }
 
-.botao_reinicio{ 
+.botao_reinicio {
     color: #ffffff;
     border: initial;
     height: 42px;
